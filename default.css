@@ -5,14 +5,23 @@ body{
   width: 600px;
   height: 600px;
 }
+.debug.container, .debug li{
+  border: 1px solid red;
+}
 .container, li{
   display: inline-block;
-  border: 1px solid red;
   position: relative;
+  border-radius: 50%;
 }
-li{
-  padding: 3px 8px;
+.debug li{
+  padding: 53px 58px;
+  margin-left: -66px;
+  margin-top: -66px;
+  font-size: 32px;
+}
+li {
   position: absolute;
+  transform-style: preserve-3d;
 }
 ul{
   list-style: none;
